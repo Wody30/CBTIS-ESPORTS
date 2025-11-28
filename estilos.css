@@ -1,0 +1,231 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Fuente Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+header {
+    background: #000;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e00000;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #e63946;
+  border-radius: 4px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1a1a1a;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(224, 57, 70, 0.3);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #e63946;
+  border-radius: 4px;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  color: #e63946;
+}
+
+.contenido {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenido h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contenido p {
+    margin-bottom: 20px;
+}
+
+.juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.juegos div {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.juegos div:hover {
+    border-color: #e00000;
+    transform: translateY(-5px);
+}
+
+.juegos img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+video {
+    border: 3px solid #e00000;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+}
+
+table th {
+    background: #e00000;
+    color: #fff;
+    font-weight: 700;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #e00000;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #e00000;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3333;
+}
+
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #e00000;
+    margin-top: 40px;
+}
